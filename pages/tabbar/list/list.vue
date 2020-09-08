@@ -56,6 +56,23 @@
 		},
 		onLoad() {
 			this.init()
+			let user = {
+				user_id: 1,
+			}
+			sessionStorage.setItem('user', user)
+			console.log(this.url + '/first')
+			uni.request({
+				url: this.url + '/first',
+				data: {
+					id: sessionStorage.getItem('user')
+				},
+				success: (res) => {
+					console.log(res)
+				},
+				fail: (err) => {
+					console.log(err)
+				}
+			})
 		},
 		onShow () {
 			this.setDate()
