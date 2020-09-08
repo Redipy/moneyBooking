@@ -4,35 +4,43 @@
 		{
 			"path": "pages/tabbar/book/book",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "记账"
 			}
 		},
 		{
 			"path": "pages/tabbar/chart/chart",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "图表"
+			}
 		},
 		{
 			"path": "pages/tabbar/list/list",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "账单"
+			}
 		},
 		{
 			"path": "pages/tabbar/date/date",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "日历"
+			}
 		},
 		{
 			"path": "pages/tabbar/mine/mine",
-			"style": {}
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "rgb(255,119,91)",
+		"backgroundColor": "#00f8cf"
 	},
 	"tabBar": {
 		"borderStyle": "black",
-		"backgroundColor": "#333",
+		"backgroundColor": "#f9f8f4",
 		"color": "#8F8F94",
 		"selectedColor": "#f33e54",
 		"list": [{

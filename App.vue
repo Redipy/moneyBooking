@@ -24,7 +24,29 @@ export default {
 </script>
 
 <style>
-li{
-	list-style: none;
-}
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style: none;
+	}
+	uni-page-body {
+		height: 100%;
+	}
+	.content {
+		height: 100%;
+		overflow-y: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: #fff9d7;
+		/* background: url(static/img/bg.jpg) center/cover; */
+	}
+	.box {
+		width: 90vw;
+		margin-top: 30rpx;
+		border-radius: 10px 10px 10px 10px;
+		background-color: #c1f9ff;
+	}
 </style>
