@@ -63,9 +63,12 @@
 			console.log(this.url + '/first')
 			uni.request({
 				url: this.url + '/first',
-				data: {
-					id: sessionStorage.getItem('user')
+				header:{
+					'Content-Type':'application/x-www-form-urlencoded'
 				},
+				// data: {
+				// 	id: sessionStorage.getItem('user')
+				// },
 				success: (res) => {
 					console.log(res)
 				},
