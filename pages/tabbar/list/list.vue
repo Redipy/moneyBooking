@@ -56,26 +56,22 @@
 		},
 		onLoad() {
 			this.init()
-			let user = {
-				user_id: 1,
-			}
-			sessionStorage.setItem('user', user)
-			console.log(this.url + '/first')
-			uni.request({
-				url: this.url + '/first',
-				header:{
-					'Content-Type':'application/x-www-form-urlencoded'
-				},
-				// data: {
-				// 	id: sessionStorage.getItem('user')
-				// },
-				success: (res) => {
-					console.log(res)
-				},
-				fail: (err) => {
-					console.log(err)
-				}
-			})
+			// console.log(this.url + '/first')
+			// uni.request({
+			// 	url: this.url + '/first',
+			// 	header:{
+			// 		'Content-Type':'application/x-www-form-urlencoded'
+			// 	},
+			// 	// data: {
+			// 	// 	id: sessionStorage.getItem('user')
+			// 	// },
+			// 	success: (res) => {
+			// 		console.log(res)
+			// 	},
+			// 	fail: (err) => {
+			// 		console.log(err)
+			// 	}
+			// })
 		},
 		onShow () {
 			this.setDate()

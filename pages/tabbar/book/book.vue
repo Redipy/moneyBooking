@@ -85,6 +85,11 @@
 			init () {
 				this.loadList()
 				this.form.time = this.dateToString(new Date())
+				let user = {
+					user_id: 1,
+					user_name: 'redipy'
+				}
+				sessionStorage.setItem('user', JSON.stringify(user))
 			},
 			loadList () {
 				const list = [
